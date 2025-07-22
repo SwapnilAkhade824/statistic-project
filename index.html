@@ -88,10 +88,6 @@
         <label for="numerical-data-variance">
           <input type="checkbox" id="numerical-data-variance" /> Variance
         </label>
-        <label for="numerical-data-standard-deviation">
-          <input type="checkbox" id="numerical-data-standard-deviation" />
-          Standard Deviation
-        </label>
         <label for="numerical-data-quartiles">
           <input type="checkbox" id="numerical-data-quartiles" /> Quartiles
         </label>
@@ -107,16 +103,101 @@
         <label for="numerical-data-kurtosis">
           <input type="checkbox" id="numerical-data-kurtosis" /> Kurtosis
         </label>
-        <label for="numerical-data-correlation">
-          <input type="checkbox" id="numerical-data-correlation" /> Karl
-          Pearson's Coefficient of Correlation
-        </label>
         <label for="numerical-data-regression">
           <input type="checkbox" id="numerical-data-regression" /> Regression
         </label>
         <label for="numerical-data-covariance">
           <input type="checkbox" id="numerical-data-covariance" /> Covariance
         </label>
+        <label
+          for="numerical-data-standard-deviation"
+          id="numerical-data-standard-deviation"
+        >
+          <input type="checkbox" id="numerical-data-standard-deviation" />
+          Standard Deviation
+        </label>
+        <label for="numerical-data-correlation" id="numerical-data-correlation">
+          <input type="checkbox" id="numerical-data-correlation" /> Karl
+          Pearson's Coefficient of Correlation
+        </label>
+      </div>
+    </div>
+
+    <div class="noOfData data-container hidden" id="noOfData">
+      <p>Number of data inputs</p>
+      <input
+        type="number"
+        placeholder="Total entries (e.g., 10)"
+        min="1"
+        max="20"
+        required
+      />
+      <div class="buttons">
+        <button id="generate-table-button">Generate Table</button>
+      </div>
+    </div>
+
+    <div class="tableForDataEntry data-container">
+      <p>Enter your Data</p>
+      <div class="data-table-container">
+        <table class="data-table" border="1">
+          <thead>
+            <tr>
+              <th>interval</th>
+              <th>frequency</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>1</td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>2</td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>3</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <div class="tableForDataEntry data-container">
+      <p>Enter your Data</p>
+      <div class="data-table-container">
+        <table class="data-table" border="1">
+          <thead>
+            <tr>
+              <th>S.No</th>
+              <th>Name</th>
+              <th>Age</th>
+              <th>City</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td data-label="S.No">1</td>
+              <td data-label="Name">alice</td>
+              <td data-label="Age">25</td>
+              <td data-label="City">mumbai</td>
+            </tr>
+            <tr>
+              <td data-label="S.No">2</td>
+              <td data-label="Name">bob</td>
+              <td data-label="Age">30</td>
+              <td data-label="City">pune</td>
+            </tr>
+            <tr>
+              <td data-label="S.No">3</td>
+              <td data-label="Name">charlie</td>
+              <td data-label="Age">28</td>
+              <td data-label="City">delhi</td>
+            </tr>
+          </tbody>
+        </table>
       </div>
     </div>
 

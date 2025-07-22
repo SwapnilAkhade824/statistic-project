@@ -53,6 +53,9 @@ document.addEventListener("DOMContentLoaded", function () {
     "numerical-data-options"
   );
 
+  // no of rows user will enter
+  const noOfDataEntry = document.getElementById("noOfData");
+
   nominalDataButton.addEventListener("click", function () {
     if (!nominalDataOptions.classList.contains("hidden")) {
       calculationOptions.classList.add("hidden");
@@ -66,6 +69,7 @@ document.addEventListener("DOMContentLoaded", function () {
       numericalDataOptions.classList.add("hidden");
     }
     nominalDataOptions.classList.toggle("hidden");
+    noOfDataEntry.classList.toggle("hidden");
   });
 
   ordinalDataButton.addEventListener("click", function () {
@@ -81,6 +85,7 @@ document.addEventListener("DOMContentLoaded", function () {
       numericalDataOptions.classList.add("hidden");
     }
     ordinalDataOptions.classList.toggle("hidden");
+    noOfDataEntry.classList.toggle("hidden");
   });
 
   function numericalDataOptionsToggle() {
@@ -96,6 +101,7 @@ document.addEventListener("DOMContentLoaded", function () {
       ordinalDataOptions.classList.add("hidden");
     }
     numericalDataOptions.classList.toggle("hidden");
+    noOfDataEntry.classList.toggle("hidden");
   }
 
   discreteDataButton.addEventListener("click", numericalDataOptionsToggle);
